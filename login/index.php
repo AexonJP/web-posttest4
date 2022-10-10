@@ -38,13 +38,13 @@ if (isset($_SESSION['username'])) {
             $password = array('123', 'user');
             if (isset($_POST['submit'])) {
                 if ($_POST['username'] == $username[0] && $_POST['password'] == $password[0]){
-                    $_SESSION["username"] = $username;
+                    $_SESSION["username"] = $username[0];
                     $_SESSION["priv"] = 'admin'; 
                     $_SESSION["nama"] = $_POST['nama'];
                     header("Location: ../");
                 }
                 elseif ($_POST['username'] == $username[1] && $_POST['password'] == $password[1]){
-                    $_SESSION["username"] = $username; 
+                    $_SESSION["username"] = $username[1]; 
                     $_SESSION["priv"] = 'user';
                     $_SESSION["nama"] = $_POST['nama'];
                     header("Location: ../");
