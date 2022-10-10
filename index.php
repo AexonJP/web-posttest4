@@ -31,6 +31,7 @@
                     echo(">Movie</a><a href=");
                     echo("javascript:alert('fitur tersebut belum tersdia mohon menunggu update lebih lanjut');");
                     echo(">Ongoing</a>");
+                    echo("<a href = "request">Request</a>");
                 }?>
                 <a href='about/'>About Me</a>
                 <?php
