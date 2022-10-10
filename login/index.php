@@ -44,7 +44,7 @@ if (isset($_SESSION['username'])) {
                     header("Location: ../");
                 }
                 elseif ($_POST['username'] == $username[1] && $_POST['password'] == $password[1]){
-                    $_SESSION["username"] = $user; 
+                    $_SESSION["username"] = $username; 
                     $_SESSION["priv"] = 'user';
                     $_SESSION["nama"] = $_POST['nama'];
                     header("Location: ../");
